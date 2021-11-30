@@ -7,11 +7,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Trial {
 	
-	public void getName() {
+	public String getName() {
 		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://login.salesforce.com/");
+		return driver.getTitle();
 		
 		//System.out.println("Name of the Employer is Enexus");
 	}

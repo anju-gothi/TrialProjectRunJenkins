@@ -9,7 +9,7 @@ public class TestTrial {
 		Trial ta= new Trial();
 		String title=ta.getName();
 		Assert.assertEquals(title,"Login | Salesforce");
-		//System.out.println(title);
+		System.out.println(title);
 	
 	}
 
